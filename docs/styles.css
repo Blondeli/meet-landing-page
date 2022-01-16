@@ -18,6 +18,10 @@
   --grey: #87879d;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   color: var(--black);
   font-family: "Red Hat Display", sans-serif;
@@ -39,6 +43,7 @@ button {
   border-radius: 29px;
   color: var(--white);
   font-weight: 900;
+  transition: all 200ms ease-in-out;
 }
 
 h5 {
@@ -84,7 +89,7 @@ h3 {
   margin: 3rem auto;
 }
 
-.header-img {
+.mobile-header-img {
   display: block;
   margin-left: -5vw;
   width: 110vw;
@@ -128,6 +133,17 @@ footer .download-btn span {
   color: var(--light-violet);
 }
 
+main .download-btn:hover {
+  background: var(--blue-hover);
+  cursor: pointer;
+}
+
+footer .download-btn:hover,
+.info-btn:hover {
+  background: var(--violet-hover);
+  cursor: pointer;
+}
+
 .info-btn {
   background: var(--dark-violet);
   margin-top: 1rem;
@@ -151,6 +167,7 @@ footer .download-btn span {
   background: white;
   border: 1px solid rgba(135, 135, 157, 0.25);
   border-radius: 50%;
+  color: var(--grey);
   height: 3.5rem;
   line-height: 3.5rem;
   margin: 9.25rem auto 4rem auto;
@@ -186,4 +203,85 @@ footer .line {
   font-size: 1.125rem;
   line-height: 1.625rem;
   margin-top: 1.5rem;
+}
+
+@media (min-width: 550px) {
+  main {
+    margin: 4.5rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin: 0 11rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin: 1rem 7.625rem 0 7.625rem;
+  }
+
+  footer {
+    background: linear-gradient(
+        0deg,
+        rgba(77, 150, 168, 0.86),
+        rgba(77, 150, 168, 0.86)
+      ),
+      url(assets/tablet/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 12rem;
+    padding: 0 6.125rem;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-top: 5.75rem 9.75rem 0 9.75rem;
+  }
+
+  .main-text {
+    margin: 1.5rem 7.25rem 0 7.25rem;
+  }
+
+  .main-text:nth-of-type(2) {
+    margin-top: 2rem 3.625rem 0 3.625rem;
+  }
+
+  .button-box {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
+
+  .download-btn {
+    margin-right: 1rem;
+    margin-top: 0;
+  }
+
+  .info-btn {
+    margin-top: 0;
+    padding: 1rem 0;
+  }
+
+  .two-figure {
+    position: absolute;
+    left: 50%;
+    margin-left: -1.75rem;
+    top: -11rem;
+  }
+
+  .one {
+    margin: 10.25rem auto 4rem auto;
+  }
+
+  .img-grid {
+    column-gap: 0.75rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .footer-text {
+    margin: 2.125rem 0 2.375rem 0;
+  }
 }
