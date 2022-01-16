@@ -21,4 +21,169 @@
 body {
   color: var(--black);
   font-family: "Red Hat Display", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  margin: 3rem 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+}
+
+button {
+  border: none;
+  border-radius: 29px;
+  color: var(--white);
+  font-weight: 900;
+}
+
+h5 {
+  color: var(--dark-blue);
+  letter-spacing: 0.25rem;
+  line-height: 1.625rem;
+  margin-top: 4rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.25rem;
+  margin-top: 1.5rem;
+}
+
+footer {
+  background: linear-gradient(
+      0deg,
+      rgba(77, 150, 168, 0.86),
+      rgba(77, 150, 168, 0.86)
+    ),
+    url(assets/mobile/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 26.75rem;
+  margin-top: 11rem;
+  padding: 0 1.5rem;
+  position: relative;
+  text-align: center;
+}
+
+h3 {
+  color: var(--white);
+  display: inline-block;
+  font-size: 2rem;
+  line-height: 2.25rem;
+  margin-top: 5.75rem;
+}
+
+.logo {
+  display: block;
+  margin: 3rem auto;
+}
+
+.header-img {
+  display: block;
+  margin-left: -5vw;
+  width: 110vw;
+}
+
+.main-text {
+  color: var(--grey);
+  line-height: 1.625rem;
+  margin-top: 1.5rem;
+}
+
+.main-text:nth-of-type(2) {
+  margin-top: 2rem;
+}
+
+.button-box {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-btn {
+  margin-top: 2rem;
+  padding: 1rem 0;
+  width: 193px;
+}
+
+main .download-btn {
+  background: var(--dark-blue);
+}
+
+main .download-btn span {
+  color: var(--light-blue);
+}
+
+footer .download-btn {
+  background: var(--dark-violet);
+}
+
+footer .download-btn span {
+  color: var(--light-violet);
+}
+
+.info-btn {
+  background: var(--dark-violet);
+  margin-top: 1rem;
+  padding: 1rem 0;
+  width: 139px;
+}
+
+.one-figure {
+  position: relative;
+}
+
+.two-figure {
+  position: absolute;
+  left: 50%;
+  margin-left: -1.75rem;
+  top: -11rem;
+}
+
+.one,
+.two {
+  background: white;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 50%;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  margin: 9.25rem auto 4rem auto;
+  width: 3.5rem;
+}
+
+.line {
+  border-left: 1px solid rgba(135, 135, 157, 0.25);
+  height: 5.25rem;
+  left: 50%;
+  position: absolute;
+  top: -5.25rem;
+}
+
+footer .line {
+  top: 4rem;
+}
+
+.img-grid {
+  column-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 1.5rem;
+}
+
+.img-grid > img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.footer-text {
+  color: var(--white);
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  margin-top: 1.5rem;
 }
