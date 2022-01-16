@@ -95,6 +95,11 @@ h3 {
   width: 110vw;
 }
 
+.header-img-right,
+.header-img-left {
+  display: none;
+}
+
 .main-text {
   color: var(--grey);
   line-height: 1.625rem;
@@ -205,7 +210,9 @@ footer .line {
   margin-top: 1.5rem;
 }
 
-@media (min-width: 550px) {
+/* Tablet design */
+
+@media (min-width: 700px) {
   main {
     margin: 4.5rem 2.5rem;
   }
@@ -283,5 +290,86 @@ footer .line {
 
   .footer-text {
     margin: 2.125rem 0 2.375rem 0;
+  }
+}
+
+/* Desktop design */
+
+@media (min-width: 1100px) {
+  header {
+    position: relative;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 7rem 24rem 0 24rem;
+  }
+
+  h2 {
+    margin: 1rem 24rem 0 24rem;
+  }
+
+  footer {
+    background: linear-gradient(
+        0deg,
+        rgba(77, 150, 168, 0.86),
+        rgba(77, 150, 168, 0.86)
+      ),
+      url(assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 19.25rem;
+    padding: 0 6.125rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 2fr 1fr;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+    margin-top: 0;
+  }
+
+  .mobile-header-img {
+    display: none;
+  }
+
+  .header-img-right,
+  .header-img-left {
+    display: inline-block;
+    position: absolute;
+  }
+
+  .header-img-right {
+    right: -2rem;
+    top: 7rem;
+  }
+
+  .header-img-left {
+    left: -2rem;
+    top: 7rem;
+  }
+
+  .main-text {
+    margin: 2rem 24rem 0 24rem;
+  }
+
+  .main-text:nth-of-type(2) {
+    margin-top: 2rem 24rem 0 24rem;
+  }
+
+  .img-grid {
+    column-gap: 1.875rem;
+    margin: 0 11%;
+  }
+
+  .footer-text {
+    margin: 0 7rem;
   }
 }
