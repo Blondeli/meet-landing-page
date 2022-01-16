@@ -1,0 +1,24 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-blue: #4d96a9;
+  --light-blue: #8fe3f9;
+  --blue-hover: #71c0d4;
+  --dark-violet: #855fb1;
+  --light-violet: #d9b8ff;
+  --violet-hover: #b18bdd;
+  --black: #28283d;
+  --white: #fafafa;
+  --grey: #87879d;
+}
+
+body {
+  color: var(--black);
+  font-family: "Red Hat Display", sans-serif;
+}
